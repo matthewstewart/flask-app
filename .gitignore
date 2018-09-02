@@ -1,0 +1,17 @@
+# Visual Studio Code
+.vscode/
+
+# Python Caching
+__pycache__/
+
+# Pytest Cache
+.pytest_cache/
+
+# Virtual Environment
+venv/
+
+# Database
+*.db
+
+# Compiled Bytecode
+*.pyc
