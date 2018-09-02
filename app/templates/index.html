@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-5 col-xl-4 text-center text-md-left">    
+        <div class="card mt-3">
+          <div class="card-header">
+            {% if current_user.is_anonymous %}
+            <h4 class="text-capitalize mb-0">Welcome To Flask App</h4>
+            {% else %}
+              <h4 class="text-capitalize mb-0">Welcome Back {{ current_user.username }}!</h4>
+            {% endif %}
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Welcome to Flask App.  This is a template for customization and reuse.
+            </p>  
+          </div>
+        </div>    
+      </div>
+    </div>    
+  </div>
+{% endblock %}
